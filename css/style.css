@@ -710,11 +710,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolio .portfolio-item h2 {
-  color: #ffffff;
+  color: black;
   font-size: 24px;
   margin: 0;
   text-transform: capitalize;
   font-weight: 700;
+}
+
+#portfolio .portfolio-item video {
+  transition: all ease-in-out 0.4s;
+  width: 100%;
+}
+
+#portfolio .portfolio-item:hover video {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #portfolio .portfolio-item img {
@@ -722,7 +732,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
 }
 
-#portfolio .portfolio-item:hover img {
+#portfolio .portfolio-item:hover img{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
