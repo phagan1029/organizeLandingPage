@@ -41,7 +41,7 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   padding: 0;
 }
 
@@ -196,7 +196,7 @@ h6 {
 
 #intro .intro-content h2 {
   color: #0c2e8a;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 64px;
   font-weight: 700;
 }
@@ -718,9 +718,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
 }
 
+
+#portfolio .portfolio-item h3 {
+  color: black;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 400;
+}
+
 #portfolio .portfolio-item video {
   transition: all ease-in-out 0.4s;
   width: 100%;
+  border: 1px solid black;
+  padding: 8px;
 }
 
 #portfolio .portfolio-item:hover video {
