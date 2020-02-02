@@ -172,3 +172,36 @@ jQuery(document).ready(function ($) {
 
 
 });
+
+
+function getTime(){
+
+var now = new Date();
+var hh = formatTime(now.getHours());
+var mm = formatTime(now.getMinutes());
+var ss = formatTime(now.getSeconds());
+var month = formatTime(now.getMonth() +1);
+var day = formatTime(now.getDate());
+var year = formatTime(now.getFullYear()-2000);
+return month + "/" + day + "/" + year + "    |   " + hh + ":"+ mm + ":" + ss
+}
+
+function formatTime(timeDenom) {
+  if(timeDenom <10) {
+    return "0" + timeDenom;
+  } else {
+    return timeDenom;
+  }
+}
+
+
+function setTime(el) {
+  el.style.whiteSpace = "pre"
+  el.innerText = getTime();
+  var elem = el;
+  setTimeout(function() {
+    return setTime(elem);
+  }, 1000)
+}
+
+setTime(document.getElementById("time"));
